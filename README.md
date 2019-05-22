@@ -21,15 +21,15 @@ A simple `telbook` web-application, using REST backend written in `php` and simp
 
 	PHP: http://php.net/manual/en/ (ver 7.0+)
 
-	MySQL database (with 3 tables: persons, telephones, teltypes)
+	MySQL database (with 3 tables: neighborhoods, landmarks, teltypes)
 
 ## Backend URLs:
 				
-	* [GET] persons
-	* [GET, POST, DELETE] persons/{ID}
-	* [GET] persons/{ID}/telephones
-	* [GET] telephones
-	* [GET, POST, DELETE] telephones/{ID}
+	* [GET] neighborhoods
+	* [GET, POST, DELETE] neighborhoods/{ID}
+	* [GET] neighborhoods/{ID}/landmarks
+	* [GET] landmarks
+	* [GET, POST, DELETE] landmarks/{ID}
 	* [GET] teltypes
 
 ## JSON entities:
@@ -38,4 +38,4 @@ A simple `telbook` web-application, using REST backend written in `php` and simp
 	* teltype: {id:2, name:"Mobile"} 
 	* telephone: {id:5, person_id:1, teltype_id:2, number:"0893199422"}
 	* message: {type:"error", text:"An Error Ocurred!"}
-	* server-response: {code:200, messages:[], person/persons/telephones...}
+	* server-response: {code:200, messages:[], person/neighborhoods/landmarks...}
