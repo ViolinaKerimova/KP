@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Telbook</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<link rel="stylesheet" type="text/css" href="client/css/default.css">
+	<script type="text/javascript" src="client/js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="client/js/jquery-rest.js"></script>
+	<script type="text/javascript" src="client/js/client-render.js"></script>
+	<script type="text/javascript" src="client/js/client.js"></script>
+</head>
+<body>
+	<table class='layout'>
+		
+		<tr>
+			<td class='panel'>
+			<h1>neighborhoods</h1>
+			<div id='neighborhoods'></div>
+			<p>
+				<a href='#' class='add_icon neighborhood-add'>Add new neighborhood</a>
+				<a href='#' class='refresh_icon neighborhoods-refresh'>Refresh</a>
+			</p>
+			<div id='neighborhoods-messages'></div>
+			</td>
+			<td class='panel'>
+				<div id='neighborhood-edit'></div>
+				<div id='neighborhood-messages'></div>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class='panel'>
+				<h1>landmarks</h1>
+				<div id='landmarks'>
+					<p class='info_icon'>Click a neighborhood to view its landmarks.</p>
+				</div>
+				<div id='landmarks-messages'></div>
+			</td>
+			<td class='panel'>
+				<div id='landmark-edit'></div>
+				<div id='landmark-messages'></div>
+			</td>
+		</tr>
+		
+	</table>
+	
+	<p>
+		<a href='https://github.com/katzarsky/php-rest-telbook.git'>GIT: Download Source</a>
+		<small>(TU Plovdiv, PHP/MYSQL + JS/HTML/CSS/AJAX DEMO, 2017)</small>
+	</p>
+</body>
+</html>
